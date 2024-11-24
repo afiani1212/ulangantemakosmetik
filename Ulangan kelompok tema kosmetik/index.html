@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>Selamat Datang di Skin Store</h1>
+    <p>Temukan Makeup Pilihan Terbaik!</p>
+   </header>
+
+   <main>
+    <center><h2>Produk Kami</h2></center>
+    <center>
+        <section id="Products">
+          <div class="Product">
+           <img src="maskara-may.jpg" alt="Mascara-MAYBELLINE Sky High">
+           <h3>Mascara-MAYBELLINE Sky High</h3>
+           <P>Harga: 103.000</P>
+           <button onclick="addToCart"('Mascara-MAYBELLINE Sky High')>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+           <img src="maskara-bb.png" alt="barenblis-Roll To Volume Mascara">
+           <h3>barenblis-Roll To Volume Mascara</h3>
+           <p>Harga: 74.4000</p>
+           <button onclick="addToCart"(barenblis-Roll To Volume Mascara)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="mois.jpg" alt="SKINTIFIC-MHS Niacinamide Brightening Moisturaizer">
+            <h3>SKINTIFIC-MHS Niacinamide Brightening Moisturaizer</h3>
+            <p>Harga: 138.800</p>
+            <button onclick="addToCart"(SKINTIFIC-MHS Niacinamide Brightening Moisturaizer)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="may fondi.jpg" alt="MAYBELLINE-Matte Liquid Foundation">
+            <h3>MAYBELLINE-Matte Liquid Foundation</h3>
+            <p>Harga: 117.700</p>
+            <button onclick="addToCart"(MAYBELLINE-Matte Liquid Foundation)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="SKINTIFIC_Cover_All_Perfect_Cushion_(1).png" alt="SKINTIFIC-All Perfect Cushion">
+            <h3>SKINTIFIC-All Perfect Cushion</h3>
+            <p>Harga: 105.000</p>
+            <button onclick="addToCart"(SKINTIFIC-All Perfect Cushion)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="bb cushion.jpg" alt="barenblis-Perfect Zoom Cover Cushion">
+            <h3>barenblis-Perfect Zoom Cover Cushion</h3>
+            <p>Harga: 149.000</p>
+            <button onclick="addToCart"(barenblis-Perfect Zoom Cover Cushion)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="bedak luk two.jpeg" alt="Luxcrime-Blur & Cover Two Way Cake ">
+            <h3>Luxcrime-Blur & Cover Two Way Cake</h3>
+            <p>Harga: 96.7000</p>
+            <button onclick="addToCart"(Luxcrime-Blur & Cover Two Way Cake)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="bedak-skin.jpg" alt="SKINTIFIC-Ultra Cover Powder Foundation">
+            <h3>SKINTIFIC-Ultra Cover Powder Foundation </h3>
+            <p>Harga: 149.000</p>
+            <button onclick="addToCart"(SKINTIFIC-Ultra Cover Powder Foundation )>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="bedak you.jpg" alt="YOU-Simplicity Matte Loose Powder">
+            <h3>YOU-Simplicity Matte Loose Powder </h3>
+            <p>Harga: 54.500</p>
+            <button onclick="addToCart"(YOU-Simplicity Matte Loose Powder)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="eyeshadow.jpg" alt="PINKFLASH-Eyeshadow Palette 12 Color Shade Waterproof">
+            <h3>PINKFLASH-Eyeshadow Palette 12 Color Shade Waterproof</h3>
+            <p>Harga: 49.000</p>
+            <button onclick="addToCart"(PINKFLASH-Eyeshadow Palette 12 Color Shade Waterproof)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="eyeshadow oh some.jpg" alt="OHSOME-COLORROSE·Western antique makeup tray">
+            <h3>OHSOME-COLORROSE·Western antique makeup tray</h3>
+            <p>Harga: 109.000</p>
+            <button onclick="addToCart"(OHSOME-COLORROSE·Western antique makeup tray)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="lip-tint.png" alt="barenblis-Peach Makes Perfect Lp Tint">
+            <h3>barenblis-Peach Makes Perfect Lp Tint</h3>
+            <p>Harga: 48.650</p>
+            <button onclick="addToCart"(barenblis-Peach Makes Perfect Lp Tint)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="lip-glos.jpg" alt="MOP-Mother Of Pearl G.W.S">
+            <h3>MOP-Mother Of Pearl G.W.S</h3>
+            <p>Harga: 80.240</p>
+            <button onclick="addToCart"(MOP-Mother Of Pearl G.W.S)>Tambah ke keranjang</button>
+        </div>
+        <div class="Product">
+            <img src="setting-spray.jpeg" alt="SEA MAKEUP-Lock It Matte Acne Setting Spray">
+            <h3>SEA MAKEUP-Lock It Matte Acne Setting Spray</h3>
+            <p>Harga: 64.000</p>
+            <button onclick="addToCart"(SEA MAKEUP-Lock It Matte Acne Setting Spray)>Tambah ke keranjang</button>
+        </div>
+        </section>
+    </center>
+
+   <section id="cart-section">
+      <h2>Keranjang Belanja</h2>
+      <ul id="cart"></ul>
+      <h3 id="total-price">Total Harga: Rp0</h3>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+</body>
+</html>
